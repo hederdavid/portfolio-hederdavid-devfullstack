@@ -1,11 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const titles = [
-  'Desenvolvedor Front-end',
-  'Desenvolvedor Back-end',
-  'Desenvolvedor Full-Stack',
-]
+const titles = ['Desenvolvedor Front-end', 'Desenvolvedor Back-end', 'Desenvolvedor Full-Stack']
 
 const displayedText = ref('')
 let index = 0
@@ -39,17 +35,16 @@ onMounted(() => {
 
 <template>
   <div class="flex flex-col items-center justify-center h-screen px-4 gap-4 text-center">
-    <p class="text-lg flex items-center gap-2">
-      Olá, eu sou <h1 class="font-semibold text-[#1E40AF] text-3xl">Heder David!</h1> <span class="text-2xl">👋</span>
-    </p>
+    <h1 class="text-lg flex items-center gap-2">
+      Olá, eu sou <span class="font-semibold text-[#1E40AF] text-3xl">Heder David!</span>
+      <span class="text-2xl">👋</span>
+    </h1>
 
     <h2 class="font-bold text-3xl sm:text-4xl h-10 text-gray-800">
       {{ displayedText }}<span class="animate-pulse">|</span>
     </h2>
 
-    <p class="text-[1.1rem] max-w-md mt-10 ">
-      Apaixonado por criar soluções eficientes e elegantes
-    </p>
+    <p class="text-[1.1rem] max-w-md mt-10">Apaixonado por criar soluções eficientes e elegantes</p>
 
     <img class="w-3/4 max-w-sm animate-float mt-4" src="/hero.png" alt="Heder David" />
 
@@ -75,7 +70,8 @@ onMounted(() => {
 
 <style scoped>
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -130,7 +126,8 @@ onMounted(() => {
 }
 
 @keyframes rotate-wiggle {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg) scale(1);
   }
   25% {
