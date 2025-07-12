@@ -20,7 +20,7 @@ const skills = [
 </script>
 
 <template>
-  <section class="flex flex-col items-center mt-[-10rem] border-2 rounded-2xl mx-6 border-blue-100 bg-white p-6 gap-10">
+  <section class="flex flex-col items-center mt-[-10rem] border-2 rounded-2xl mx-6 border-blue-100 bg-white p-6 gap-20 py-20">
     <Skills
       v-for="(skill, index) in skills"
       :key="index"

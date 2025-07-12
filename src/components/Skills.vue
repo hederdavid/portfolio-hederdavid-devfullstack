@@ -22,7 +22,7 @@ const props = defineProps({
 <template>
   <section class="flex flex-col items-center justify-center "
   >
-    <div class="w-16 h-16 rounded-full bg-blue-300 flex items-center justify-center mt-10">
+    <div class="w-16 h-16 rounded-full bg-blue-300 flex items-center justify-center mb-4">
       <img
         src="../components/icons/front-end-icon.svg"
         alt="Ícone de Front-End"
@@ -44,7 +44,7 @@ const props = defineProps({
         </ul>
       </div>
 
-      <div class="flex flex-col items-center gap-2 mb-10">
+      <div class="flex flex-col items-center gap-2">
         <h4 class="text-primary">Frameworks e Bibliotecas</h4>
         <ul class="flex flex-col text-sm gap-2 items-center justify-center">
           <li v-for="(framework, index) in frameworks" :key="index" class="bg-blue-100 px-2 py-1 rounded-full">
