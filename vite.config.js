@@ -10,20 +10,12 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
-    tailwindcss({
-      config: {
-        content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-          },
-          plugins: [],
-        },
-      },
-    }),
+    tailwindcss(),
   ],
+   server: {
+    host: true,
+    allowedHosts: ['7fc40dc19158.ngrok-free.app'],
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

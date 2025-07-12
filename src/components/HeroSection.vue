@@ -34,9 +34,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center h-screen px-4 gap-4 text-center">
+  <div class="flex flex-col items-center mt-14 px-4 gap-4 text-center">
     <h1 class="text-lg flex items-center gap-2">
-      Olá, eu sou <span class="font-semibold text-[#1E40AF] text-3xl">Heder David!</span>
+      Olá, eu sou <span class="font-semibold text-[#1E40AF] text-2xl">Heder David!</span>
       <span class="text-2xl">👋</span>
     </h1>
 
@@ -49,21 +49,27 @@ onMounted(() => {
     <img class="w-3/4 max-w-sm animate-float mt-4" src="/hero.png" alt="Heder David" />
 
     <div class="flex gap-6 mt-6">
-      <img
-        src="../../src/components/icons/linkedin.svg"
-        alt="Ícone LinkedIn"
-        class="social-icon linkedin-icon"
-      />
-      <img
-        src="../../src/components/icons/github.svg"
-        alt="Ícone GitHub"
-        class="social-icon github-icon"
-      />
-      <img
-        src="../../src/components/icons/curriculum.svg"
-        alt="Ícone Currículo"
-        class="social-icon curriculum-icon"
-      />
+      <a href="https://linkedin.com/in/hederdavid" target="_blank" rel="noopener noreferrer">
+        <img
+          src="../../src/components/icons/linkedin.svg"
+          alt="Ícone LinkedIn"
+          class="social-icon linkedin-icon"
+        />
+      </a>
+      <a href="https://github.com/hederdavid" target="_blank" rel="noopener noreferrer">
+        <img
+          src="../../src/components/icons/github.svg"
+          alt="Ícone GitHub"
+          class="social-icon github-icon"
+        />
+      </a>
+      <a href="https://heder.tech/hederdavid" target="_blank" rel="noopener noreferrer">
+        <img
+          src="../../src/components/icons/curriculum.svg"
+          alt="Ícone Currículo"
+          class="social-icon curriculum-icon"
+        />
+      </a>
     </div>
   </div>
 </template>
