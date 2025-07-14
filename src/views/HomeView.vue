@@ -6,7 +6,7 @@ import SkillsSection from '@/components/SkillsSection.vue';
 </script>
 
 <template>
-  <div class="container flex flex-col justify-center">
+  <div class="flex flex-col justify-center">
     <header class="m-6">
       <AppHeader />
     </header>

@@ -4,7 +4,10 @@
 </script>
 
 <template >
-  <router-view/>
+  <div class="flex flex-col items-center justify-center w-screen">
+    <router-view />
+  </div>
+  
 </template>
 
 <style scoped>
