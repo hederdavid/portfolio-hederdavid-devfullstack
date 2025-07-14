@@ -13,7 +13,7 @@ import SkillsSection from '@/components/SkillsSection.vue';
       <AppHeader />
     </header>
 
-    <main class="flex flex-col gap-14 mb-100">
+    <main class="flex flex-col gap-14">
       <HeroSection class="m-6" />
       <AboutSection />
       <SkillsSection class="m-6" />
