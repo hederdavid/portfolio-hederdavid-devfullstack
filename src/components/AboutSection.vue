@@ -8,7 +8,7 @@
     <img
         src="/tech.png"
         alt="Ilustração de tecnologias"
-        class="w-3/4 mx-auto mb-[-0.05rem]"
+        class="lg:w-3/5 w-3/4 mx-auto mb-[-0.05rem]"
       />
     <div class="w-full bg-gradient-to-b from-primary to-blue-400 flex  justify-center h-[35rem]">
       

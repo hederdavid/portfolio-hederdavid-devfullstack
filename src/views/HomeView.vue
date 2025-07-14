@@ -1,7 +1,7 @@
 <script setup>
 import AboutSection from '@/components/AboutSection.vue';
 import AppHeader from '@/components/AppHeader.vue'
-import Contact from '@/components/Contact.vue';
+import ContactFooter from '@/components/ContactFooter.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import ProjectsSection from '@/components/ProjectsSection.vue';
 import SkillsSection from '@/components/SkillsSection.vue';
@@ -18,11 +18,10 @@ import SkillsSection from '@/components/SkillsSection.vue';
       <AboutSection />
       <SkillsSection class="m-6" />
       <ProjectsSection class="m-6" />
-      <Contact class="m-6" />
     </main>
 
     <footer>
-      
+      <ContactFooter class="" />
     </footer>
   </div>
 </template>

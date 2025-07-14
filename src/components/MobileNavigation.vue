@@ -1,20 +1,27 @@
-<script setup>
-import MobileNavigation from './MobileNavigation.vue'
-import { ref } from 'vue'
-
-const openMobileMenu = ref(false)
-
-function fecharMenu() {
-  openMobileMenu.value = false
-}
-</script>
-
 <template>
-  <div class="flex justify-between items-center">
-    <img class="w-14" src="/dev-icon.svg" alt="Ícone de Desenvolvedor" />
-    <div class="hidden">
+  <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    <div class="bg-white rounded-lg p-6 w-11/12 max-w-sm text-center relative">
       <button
-        class="font-semibold group cursor-pointer flex items-center border-2 px-6 py-2 rounded-4xl border-primary text-primary hover:text-white hover:bg-primary hover:shadow-lg"
+        class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition"
+        @click="emitClose"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <button
+        class="font-semibold group cursor-pointer flex items-center border-2 px-6 py-2 rounded-4xl border-primary text-primary hover:text-white hover:bg-primary hover:shadow-lg mx-auto"
       >
         Vamos Conversar
         <svg
@@ -41,24 +48,13 @@ function fecharMenu() {
         </svg>
       </button>
     </div>
-    <img
-      class="w-5 lg:hidden md:hidden"
-      src="../components/icons/hamburger-menu.svg"
-      alt="Ícone de Menu"
-      @click="openMobileMenu = !openMobileMenu"
-    />
   </div>
-
-  <!-- Escuta o evento close emitido pelo MobileNavigation e fecha o menu -->
-  <MobileNavigation v-if="openMobileMenu" @close="fecharMenu" />
 </template>
 
-<style scoped>
-button {
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+<script setup>
+const emit = defineEmits(['close'])
+const emitClose = () => {
+  // Emitir evento de fechamento para o componente pai
+  emit('close')
 }
-
-button svg {
-  transition: fill 0.3s ease;
-}
-</style>
+</script>
