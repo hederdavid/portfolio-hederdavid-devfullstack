@@ -1,7 +1,9 @@
 <script setup>
 import AboutSection from '@/components/AboutSection.vue';
 import AppHeader from '@/components/AppHeader.vue'
+import Contact from '@/components/Contact.vue';
 import HeroSection from '@/components/HeroSection.vue';
+import ProjectsSection from '@/components/ProjectsSection.vue';
 import SkillsSection from '@/components/SkillsSection.vue';
 </script>
 
@@ -14,7 +16,13 @@ import SkillsSection from '@/components/SkillsSection.vue';
     <main class="flex flex-col gap-14 mb-100">
       <HeroSection class="m-6" />
       <AboutSection />
-      <SkillsSection />
+      <SkillsSection class="m-6" />
+      <ProjectsSection class="m-6" />
+      <Contact class="m-6" />
     </main>
+
+    <footer>
+      
+    </footer>
   </div>
 </template>

@@ -2,9 +2,8 @@
 
 @theme {
   --color-primary: #4169e1;   /* Azul Royal */
-  --color-secondary: #f4f6fa; /* Cinza Claro (fundo clean) */
-  --color-tertiary: #1f2a44;  /* Azul Escuro (textos, menus) */
-  --color-accent: #3ddc97;    /* Verde Menta (hover, detalhes) */
+  --color-secondary: #87F0CB; /* Cinza Claro (fundo clean) */
+  --color-tertiary: #121212; /* Preto Suave com fundo elegante */
   --color-highlight: #fdcb6e; /* Dourado Claro (destaques opcionais) */
 }
 

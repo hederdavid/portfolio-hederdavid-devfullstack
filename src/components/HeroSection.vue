@@ -40,7 +40,7 @@ onMounted(() => {
       <span class="text-2xl">👋</span>
     </h1>
 
-    <h2 class="font-bold text-3xl sm:text-4xl h-10 text-gray-800">
+    <h2 class="font-bold text-3xl sm:text-4xl h-10 text-tertiary">
       {{ displayedText }}<span class="animate-pulse">|</span>
     </h2>
 
