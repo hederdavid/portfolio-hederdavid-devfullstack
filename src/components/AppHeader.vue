@@ -14,6 +14,7 @@ function fecharMenu() {
     <img class="w-14" src="/dev-icon.svg" alt="Ícone de Desenvolvedor" />
     <div class="lg:block md:block hidden">
       <button
+
         class="font-semibold group cursor-pointer flex items-center border-2 px-6 py-2 rounded-4xl border-primary text-primary hover:text-white hover:bg-primary hover:shadow-lg"
       >
         Vamos Conversar

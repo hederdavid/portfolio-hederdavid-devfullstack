@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const navigateToContact = () => {
+  router.push({ path: '/contato' }) // Certifique-se de que a rota '/contato' está configurada no Vue Router
+}
+</script>
 
 <template>
   <section
@@ -8,8 +16,9 @@
     <p>Vamos conversar e transformar suas ideias em realidade.</p>
     <button
       class="flex gap-2 items-center justify-center cursor-pointer border border-blue-300 rounded-4xl px-12 py-4 font-medium transition-all duration-300 hover:bg-blue-300 hover:shadow-lg"
+      @click="navigateToContact"
     >
-    <img class="lg:w-8 w-6 " src="/src/components/icons/start-a-project-icon.svg" alt="">
+      <img class="lg:w-8 w-6" src="/src/components/icons/start-a-project-icon.svg" alt="" />
       Bora começar
     </button>
   </section>

@@ -1,8 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-primary: #4169e1;   /* Azul Royal */
-  --color-secondary: #87F0CB; /* Cinza Claro (fundo clean) */
+  --color-primary: #4169e1; /* Azul Royal */
+  --color-secondary: #87f0cb; /* Cinza Claro (fundo clean) */
   --color-tertiary: #121212; /* Preto Suave com fundo elegante */
   --color-highlight: #fdcb6e; /* Dourado Claro (destaques opcionais) */
 }
@@ -11,3 +11,37 @@
   font-family: 'Inter', sans-serif;
 }
 
+/* Design único e impressionante para a scrollbar */
+::-webkit-scrollbar {
+  width: 11px;
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #f1f5f9 0%, #cbd5e1 50%, #f1f5f9 100%);
+  border-radius: 0;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6366f1 0%, #4169e1 50%, #3b82f6 100%);
+  border-radius: 0;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow:
+    0 0 10px rgba(65, 105, 225, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(180deg, #7c3aed 0%, #3730a3 50%, #1e40af 100%);
+}
+
+::-webkit-scrollbar-corner {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-radius: 0;
+}
