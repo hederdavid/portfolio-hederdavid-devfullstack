@@ -7,14 +7,14 @@ const skills = [
     description: 'Transformar ideias em experiências interativas é onde a mágica acontece.',
     languages: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
     frameworks: ['Vue.js', 'Angular', 'Quasar', 'TailwindCSS'],
-    icon: '../icons/front-end-icon.svg',
+    icon: '../../../src/components/icons/front-end-icon.svg',
   },
   {
     title: 'Desenvolvedor Back End',
     description: 'Construindo a lógica por trás das aplicações, garantindo eficiência e segurança.',
     languages: ['TypeScript', 'Java'],
     frameworks: ['NodeJs', 'NestJs', 'Spring Boot', 'Prisma', 'PostgreSQL', 'MySQL', 'MongoDB'],
-    icon: '../icons/back-end-icon.svg',
+    icon: '.../../../src/components/icons/back-end-icon.svg',
   },
 ]
 </script>
