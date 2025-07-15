@@ -1,15 +1,9 @@
-<script setup>
+<script setup></script>
 
-
-</script>
-
-<template >
-  <div class="flex flex-col items-center justify-center">
+<template>
+  <div class="flex flex-col items-center justify-center min-h-screen overflow-x-hidden">
     <router-view />
   </div>
-  
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

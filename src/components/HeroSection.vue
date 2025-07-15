@@ -34,17 +34,17 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center mt-14 px-4 gap-4 text-center">
-    <h1 class="text-lg flex items-center gap-2">
-      Olá, eu sou <span class="font-semibold text-[#1E40AF] text-2xl">Heder David!</span>
+  <div class="flex flex-col items-center mt-14 px-4 gap-4 text-center pb-12">
+    <h1 class="lg:text-3xl text-lg flex items-center gap-2 ">
+      Olá, eu sou <span class="lg:text-4xl font-semibold text-[#1E40AF] text-2xl ">Heder David!</span>
       <span class="text-2xl">👋</span>
     </h1>
 
-    <h2 class="font-bold text-3xl sm:text-4xl h-10 text-tertiary">
+    <h2 class="lg:text-5xl font-bold  text-3xl h-10 text-tertiary">
       {{ displayedText }}<span class="animate-pulse">|</span>
     </h2>
 
-    <p class="text-[1.1rem] max-w-md mt-10">Apaixonado por criar soluções eficientes e elegantes</p>
+    <p class="lg:text-xl text-[1.1rem] max-w-md mt-10">Apaixonado por criar soluções eficientes e elegantes</p>
 
     <img class="w-3/4 max-w-sm animate-float mt-4" src="/hero.png" alt="Heder David" />
 
