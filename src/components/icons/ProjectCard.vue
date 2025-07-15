@@ -64,7 +64,7 @@ const handleLinkClick = (event) => {
       :class="active
         ? 'translate-y-[-120%] opacity-0'
         : 'translate-y-0 opacity-100 group-hover:-translate-y-120 group-hover:opacity-0'"
-      style="translate-y: var(--tw-translate-y);"
+      style="transform: translateY(var(--tw-translate-y));"
     >
       <h3 class="text-2xl font-bold text-center px-4">{{ title }}</h3>
     </div>
