@@ -8,6 +8,10 @@ let index = 0
 let charIndex = 0
 let isDeleting = false
 
+const openCv = () => {
+  window.open('/curriculo-hederdavid.pdf', '_blank')
+}
+
 onMounted(() => {
   const type = () => {
     const current = titles[index]
@@ -63,7 +67,7 @@ onMounted(() => {
           class="social-icon github-icon"
         />
       </a>
-      <a href="https://heder.tech/hederdavid" target="_blank" rel="noopener noreferrer">
+      <a @click="openCv" rel="noopener noreferrer">
         <img
           src="../../src/components/icons/curriculum.svg"
           alt="Ícone Currículo"
